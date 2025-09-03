@@ -1,0 +1,202 @@
+body {
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+    color: #2d3436;
+    background: linear-gradient(270deg, #b2bec3, rgb(189, 211, 219));
+    background-size: 800% 800%;
+    margin-top: 4rem;
+}
+
+h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 90px;
+}
+
+#divPalco {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 15px;
+}
+
+#ladoEsquerdo,
+#ladoDireito {
+    display: grid;
+    grid-template-columns: repeat(15, auto);
+    gap: 8px;
+}
+
+#divPalco figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+#divPalco figure img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 5px;
+}
+
+#divPalco figure img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 5px #fff;
+}
+
+#divPalco figure figcaption {
+    font-size: 12px;
+    margin-top: 2px;
+
+}
+
+
+
+.card-reserva h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-reserva input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+
+.legend img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+
+.palco {
+    width: 100%;
+    height: 100px;
+    background-color: #636e72;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    text-align: center;
+    line-height: 100px;
+    color: #2d343677;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+
+.form-group {
+    display: flex;
+    margin-bottom: 1rem;
+    width: 20%;
+}
+
+.form-group input[type="number"] {
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+}
+
+.legend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+
+.form-row label {
+    font-size: 0.9rem;
+    color: #636e72;
+    font-weight: 700;
+}
+
+.form-row input[type="number"] {
+    padding: 0.4rem 0.6rem;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 120px;
+    font-size: 0.9rem;
+}
+
+.form-row input[type="button"] {
+    padding: .5rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border: 2px solid #1d8a4a;
+    color: #1d8a4a;
+    transition: 0.2s;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.form-row input[type="submit"] {
+    padding: .5rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border: 2px solid #636e72;
+    color: #636e72;
+    transition: 0.2s;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.status {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: right;
+    margin-top: 1rem;
+}
+
+.status p {
+    flex: 1;
+    padding: 0.5rem 0;
+    color: #ffffff;
+    font-weight: 400;
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    font-size: .5rem;
+    padding: .5rem;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+}
+
+.status .disponivel {
+    background-color: #ccc;
+}
+
+.status .Reservada {
+    background-color: #636e72;
+}
+
+.status .Ocupada {
+    background-color: #a50000;
+}

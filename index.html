@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teatro: Musical</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title">Seleção de Poltronas</h1>
+    <div class="container">
+        <form id="frm">
+
+            <div class="legend">
+                <div class="form-row">
+                    <label for="inPoltrona"></label>
+                    <input type="number" id="inPoltrona" min="1" autofocus placeholder="Nº da Poltrona">
+                    <input type="submit" value="Reservar">
+                    <input type="button" id="btnConfirmar" value="Confirmar">
+                </div>
+                <div class="status">
+                    <p class="disponivel">Disponível</p>
+                    <p class="Reservada">Reservada</p>
+                    <p class="Ocupada">Ocupada</p>
+                </div>
+            </div>
+        </form>
+        <div id="divPalco">
+            <div id="ladoEsquerdo"></div>
+            <div id="ladoDireito"></div>
+        </div>
+
+        <div class="palco">
+            Palco
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
